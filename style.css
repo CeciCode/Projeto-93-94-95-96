@@ -1,0 +1,11 @@
+.userDiv {
+    border-style: dotted;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+body {
+    background-color: cyan;
+    padding-top: 300px;
+}
