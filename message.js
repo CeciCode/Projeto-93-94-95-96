@@ -4,6 +4,7 @@ function addRoom() {
     room= document.getElementById("room_name").value;
     localStorage.setItem(room);
     window.location= "chat.html";
+    document.getElementById("output").innerHTML= "#" + room;
 }
 function getData() {firebase.database().ref("/").on('value',
 function(snapshot) {document.getElementById("output").innerHTML =
@@ -19,3 +20,8 @@ function redirectToroomName() {
     localStorage.setItem(room);
     window.location= "chat.html";
 }
+function logout() {
+    localStorage.removeItem("user_name");
+    localStorage.removeItem("room_name");
+    window.location= "index.html";
+  }
